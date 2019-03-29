@@ -44,9 +44,18 @@ public class Image {
         this.width = width;
     }
 
-    private boolean isHole(int x, int y) {
+    //TODO
+    private void findHole() {
+
+    }
+
+    private boolean isPixelHole(int x, int y) {
         return this.values[x][y] == -1;
     }
 
+    //TODO
+    private void fillHole() {
+
+    }
 
 }

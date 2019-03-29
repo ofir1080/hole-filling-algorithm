@@ -29,10 +29,10 @@ public class Main {
             }
         }
 
-
-
         File ouptut = new File("grayscaled.jpg");
         ImageIO.write(image, "jpg", ouptut);
+
+        //TODO: take reuired args
 
 
     }
