@@ -2,7 +2,7 @@ public class Point {
 
     private int x;
     private int y;
-    public float value;
+    private float value;
 
     public Point(int x, int y, float value) {
         this.x = x;
@@ -10,4 +10,15 @@ public class Point {
         this.value = value;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public float getValue() {
+        return value;
+    }
 }

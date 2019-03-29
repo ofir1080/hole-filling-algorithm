@@ -3,7 +3,7 @@ import java.util.HashSet;
 public class Hole extends Point{
 
 //    private int boudaryType;
-    HashSet<Point> boundery;
+    private HashSet<Point> boundery;
 
 
     public Hole(int x, int y, int boundaryType, float[][] values) {
@@ -22,6 +22,10 @@ public class Hole extends Point{
             boundery.add(new Point(x, y, values[x + 1][y + 1]));
             boundery.add(new Point(x, y, values[x - 1][y + 1]));
         }
+    }
+
+    public HashSet<Point> getBoundery() {
+        return boundery;
     }
 }
 
