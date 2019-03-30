@@ -11,7 +11,8 @@ public class Image {
     //TODO: add boundary type
     //TODO: add weighting function
 
-    private float[][] values;
+    private Point[][] values;
+    private boolean[][] mask;
     private int height;
     private int width;
 
@@ -20,7 +21,8 @@ public class Image {
         BufferedImage image = ImageIO.read(new File(pathname));
         this.width = image.getWidth();
         this.height = image.getHeight();
-        this.values = new float[height][width];
+        this.values = new Point[height][width];
+        this.mask = new boolean[height][width];
 
         // converts RGB to a float in the close interval [0,1]
         for (int i = 0; i < height; i++) {
@@ -29,8 +31,13 @@ public class Image {
                 int red = (int) (c.getRed() * 0.299);
                 int green = (int) (c.getGreen() * 0.587);
                 int blue = (int) (c.getBlue() * 0.114);
-                values[i][j] = red + green + blue  == 0 ? 0 : (float) 1 / (red + green + blue);
+                // sets black pixel to 0 to prevent division by 0.
+                float value = red + green + blue  == 0 ? 0 : (float) 1 / (red + green + blue);
+                values[i][j] = new Point(i, j, value);
+                mask[i][j] = isPixelHole(i, j);
+                System.out.print(mask[i][j] + " ");
             }
+            System.out.println();
         }
 
     }
@@ -41,7 +48,7 @@ public class Image {
     }
 
     private boolean isPixelHole(int x, int y) {
-        return this.values[x][y] == -1;
+        return this.values[x][y].getValue() == 0;
     }
 
     //TODO

@@ -3,8 +3,8 @@
 public class FillHoleMath {
 
     //TODO: set z and epsilon to final
-    static float z = 1;
-    static float epsilon = 1;
+    static float z = 2;
+    static float epsilon = 0.001f;
 
 
     // TODO: try to deliver (weight) function
@@ -28,9 +28,9 @@ public class FillHoleMath {
 
     private static float euclideanDist(Point p1, Point p2) {
 
-        float axisX = p1.getX() - p2.getX();
-        float axisY = p1.getY() - p2.getY();
-        return (float) (Math.sqrt(axisX * axisX + axisY * axisY));
+        float xVal = p1.getX() - p2.getX();
+        float yVal = p1.getY() - p2.getY();
+        return (float) (Math.sqrt(xVal * xVal + yVal * yVal));
     }
 
 }

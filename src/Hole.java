@@ -28,5 +28,3 @@ public class Hole extends Point{
         return boundery;
     }
 }
-
-enum BoundaryType {FOUR, EIGHT}
