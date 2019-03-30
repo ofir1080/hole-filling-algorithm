@@ -20,28 +20,19 @@ public class Image {
         BufferedImage image = ImageIO.read(new File(pathname));
         this.width = image.getWidth();
         this.height = image.getHeight();
+        this.values = new float[height][width];
 
+        // converts RGB to a float in the close interval [0,1]
         for (int i = 0; i < height; i++) {
-
             for (int j = 0; j < width; j++) {
-
-                //TODO: convert RGB to a floting point in [0,1]
-
-//                Color c = new Color(image.getRGB(j, i));
-//                int red = (int) (c.getRed() * 0.299);
-//                int green = (int) (c.getGreen() * 0.587);
-//                int blue = (int) (c.getBlue() * 0.114);
-//                Color newColor = new Color(red + green + blue,
-//                        red + green + blue, red + green + blue);
-//
-//                image.setRGB(j, i, newColor.getRGB());
-
+                Color c = new Color(image.getRGB(j, i));
+                int red = (int) (c.getRed() * 0.299);
+                int green = (int) (c.getGreen() * 0.587);
+                int blue = (int) (c.getBlue() * 0.114);
+                values[i][j] = red + green + blue  == 0 ? 0 : (float) 1 / (red + green + blue);
             }
         }
 
-        this.values = values;
-        this.height = height;
-        this.width = width;
     }
 
     //TODO

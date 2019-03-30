@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6239e010-8ac6-4770-b46e-80f7036e0b63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digital_image_processing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/digital_image_processing.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grayscaled.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/grayscaled.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HoleFillingUtility/BoundaryType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HoleFillingUtility/BoundaryType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HoleFillingUtility/Hole.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HoleFillingUtility/Hole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HoleFillingUtility/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HoleFillingUtility/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HoleFillingUtility/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HoleFillingUtility/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HoleFillingUtility/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HoleFillingUtility/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,32 +25,36 @@
     <session id="2094341419">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="iml" value="1" />
           <entry key="java" value="7" />
-          <entry key="jpg" value="5" />
+          <entry key="jpg" value="17" />
+          <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="5" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="18" />
           <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2164" />
-          <entry key="txt" value="49" />
+          <entry key="java" value="2639" />
+          <entry key="txt" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2164" />
-          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="JAVA" value="2639" />
+          <entry key="PLAIN_TEXT" value="70" />
         </counts>
       </usages-collector>
     </session>
@@ -50,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            <state relative-caret-position="370">
+              <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Image.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="296">
+              <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/FillHoleMath.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -92,97 +106,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utilities/GrayscalePicture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="449" selection-start-line="449" selection-end-line="449" />
-              <folding>
-                <element signature="e#0#18216#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#7874#7875#0" expanded="true" />
-                <element signature="e#7914#7915#0" expanded="true" />
-                <element signature="e#8021#8022#0" expanded="true" />
-                <element signature="e#8062#8063#0" expanded="true" />
-                <element signature="e#9457#9458#0" expanded="true" />
-                <element signature="e#9486#9487#0" expanded="true" />
-                <element signature="e#9628#9629#0" expanded="true" />
-                <element signature="e#9656#9657#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utilities/StdIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26973#0" expanded="true" />
-                <element signature="e#10653#10654#0" expanded="true" />
-                <element signature="e#10694#10695#0" expanded="true" />
-                <element signature="e#11109#11110#0" expanded="true" />
-                <element signature="e#11153#11154#0" expanded="true" />
-                <element signature="e#21795#21803#0" expanded="true" />
-                <element signature="e#23886#23887#0" expanded="true" />
-                <element signature="e#23983#23984#0" expanded="true" />
-                <element signature="e#24489#24490#0" expanded="true" />
-                <element signature="e#24525#24526#0" expanded="true" />
-                <element signature="e#24904#24905#0" expanded="true" />
-                <element signature="e#24943#24944#0" expanded="true" />
-                <element signature="e#25212#25213#0" expanded="true" />
-                <element signature="e#25251#25252#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utilities/StdOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#10033#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#3380#3381#0" expanded="true" />
-                <element signature="e#3407#3408#0" expanded="true" />
-                <element signature="e#3533#3534#0" expanded="true" />
-                <element signature="e#3562#3563#0" expanded="true" />
-                <element signature="e#3741#3742#0" expanded="true" />
-                <element signature="e#3771#3772#0" expanded="true" />
-                <element signature="e#3949#3950#0" expanded="true" />
-                <element signature="e#3979#3980#0" expanded="true" />
-                <element signature="e#4158#4159#0" expanded="true" />
-                <element signature="e#4188#4189#0" expanded="true" />
-                <element signature="e#4363#4364#0" expanded="true" />
-                <element signature="e#4393#4394#0" expanded="true" />
-                <element signature="e#4570#4571#0" expanded="true" />
-                <element signature="e#4600#4601#0" expanded="true" />
-                <element signature="e#4775#4776#0" expanded="true" />
-                <element signature="e#4805#4806#0" expanded="true" />
-                <element signature="e#4974#4975#0" expanded="true" />
-                <element signature="e#5004#5005#0" expanded="true" />
-                <element signature="e#5184#5185#0" expanded="true" />
-                <element signature="e#5214#5215#0" expanded="true" />
-                <element signature="e#5449#5450#0" expanded="true" />
-                <element signature="e#5479#5480#0" expanded="true" />
-                <element signature="e#5561#5562#0" expanded="true" />
-                <element signature="e#5588#5589#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,11 +133,11 @@
         <option value="$PROJECT_DIR$/src/utilities/GrayscalePicture.java" />
         <option value="$PROJECT_DIR$/src/utilities/StdOut.java" />
         <option value="$PROJECT_DIR$/src/utilities/StdIn.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/utilities/FillHoleMath.java" />
         <option value="$PROJECT_DIR$/src/Point.java" />
         <option value="$PROJECT_DIR$/src/Hole.java" />
         <option value="$PROJECT_DIR$/src/FillHoleMath.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Image.java" />
       </list>
     </option>
@@ -221,9 +148,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1358" />
     <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -233,6 +160,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,16 +177,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553896671116" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553949632066" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,7 +230,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553881360632</updated>
-      <workItem from="1553881362072" duration="13684000" />
+      <workItem from="1553881362072" duration="17607000" />
+      <workItem from="1553948508323" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented FillHoleMath for dry params.">
       <created>1553896386132</created>
@@ -307,11 +240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553896386132</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added some TODOs.">
+      <created>1553896777753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553896777753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13684000" />
+    <option name="totallyTimeSpent" value="18726000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,37 +263,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="960" extended-state="6" />
+    <frame x="0" y="23" width="1358" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20896657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.14170507" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949308" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.14170507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +304,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented FillHoleMath for dry params." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented FillHoleMath for dry params." />
+    <MESSAGE value="Added some TODOs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some TODOs." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/utilities/GrayscalePicture.java">
@@ -444,23 +385,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HoleFillingUtility.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grayscaled2.jpg" />
+    <entry file="file://$PROJECT_DIR$/grayscaled3.jpg" />
+    <entry file="file://$PROJECT_DIR$/grayscaled4.jpg" />
     <entry file="file://$PROJECT_DIR$/digital_image_processing.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/grayscaled.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
+    <entry file="file://$PROJECT_DIR$/src/FillHoleMath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -471,17 +411,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FillHoleMath.java">
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="210">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scshot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="370">
+          <caret line="38" column="80" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -490,8 +436,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="296">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
