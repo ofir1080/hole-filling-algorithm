@@ -33,4 +33,14 @@ public class FillHoleMath {
         return (float) (Math.sqrt(xVal * xVal + yVal * yVal));
     }
 
+    //TODO
+    private void findHole() {
+
+    }
+
+
+    //TODO
+    private void fillHole() {
+
+    }
 }

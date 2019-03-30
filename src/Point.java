@@ -1,5 +1,4 @@
 
-
 enum Type { FOREGROUND, BOUNDARY, HOLE }
 
 public class Point {
