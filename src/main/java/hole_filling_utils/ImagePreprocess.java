@@ -1,4 +1,4 @@
-package FillingHole;
+package hole_filling_utils;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
+
+enum CONNECTIVITY_TYPE { FOUR, EIGHT }
+
 /**
  *  This class converts an image into a 2d array where each pixel value is a point with ​float a​ in the range ​[0, 1]​,
  *  and hole values which are marked with the value ​-1​
@@ -16,16 +19,37 @@ import java.util.Set;
 public class ImagePreprocess {
 
     /**
+     * returns a 2d array of bool (mask). mask[i][j] is true iff its pixel tends to black (that is, a hole pixel in main image), false otherwise
+     * @param maskPath
+     * @return a 2 boolean array indicates 'hole pixels' in main image
+     * @throws IOException
+     */
+    public boolean[][] convertMaskToBinary(String maskPath) throws IOException {
+
+        BufferedImage maskBuffer = ImageIO.read(new File(maskPath));
+        int width = maskBuffer.getWidth();
+        int height = maskBuffer.getHeight();
+        boolean[][] mask = new boolean[height][width];
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                Color c = new Color(maskBuffer.getRGB(j, i));
+                mask[i][j] = rgbToGrayscale(c) > .5;
+            }
+        }
+        return mask;
+    }
+
+    /**
      * return a 2d array of pixels type Point, where a hole pixel value is -1
      *
      * @param imagePath main image pathname
-     * @param maskPath  mask binary image pathname
+     * @param mask 2d boolean array represents a binary image
      * @return a 2d array of pixels with values in [0,1]
      */
-    public static Point[][] convertToGrayscale(String imagePath, String maskPath) throws IOException {
+    public static Point[][] convertToGrayscale(String imagePath, boolean[][] mask) throws IOException {
 
         BufferedImage image = ImageIO.read(new File(imagePath));
-        BufferedImage mask = ImageIO.read(new File(maskPath));
         int width = image.getWidth();
         int height = image.getHeight();
         Point[][] pixels = new Point[height][width];
@@ -34,23 +58,27 @@ public class ImagePreprocess {
             for (int j = 0; j < width; j++) {
 
                 Color iColor = new Color(image.getRGB(j, i));
-                boolean isHole = new Color(mask.getRGB(j, i)).getBlue() == 255; // since mask is binary, for all pixel p, red = blue = red == 255/0
-
                 float value = -1f;
-                if (!isHole) {
-                    // if pixel (i, j) is not a hole converts RGB values to grayscale using weights
-                    // (NOTE that weights sum is 1)
-                    int red = (int) (iColor.getRed() * 0.299);
-                    int green = (int) (iColor.getGreen() * 0.587);
-                    int blue = (int) (iColor.getBlue() * 0.114);
-                    // converts to a fraction
-                    value = (float) (red + green + blue) / 255;
+                if (!mask[i][j]) {
+                    // if pixel (j,i) is not a 'hole pixel' convert its color to grayscale
+                    value = rgbToGrayscale(iColor);
                 }
                 // converts sum to a fraction in the closed interval [0,1]
                 pixels[i][j] = new Point(i, j, value);
             }
         }
         return pixels;
+    }
+
+    private static float rgbToGrayscale(Color c) {
+
+        // if pixel (i, j) is not a hole converts RGB values to grayscale using weights
+        // (NOTE that weights sum is 1)
+        int red = (int) (c.getRed() * 0.299);
+        int green = (int) (c.getGreen() * 0.587);
+        int blue = (int) (c.getBlue() * 0.114);
+
+        return (float) (red + green + blue) / 255;
     }
 
     /**
@@ -77,7 +105,7 @@ public class ImagePreprocess {
      * @param H set of all hole pixels ( defined with value -1)
      * @return set of all boundary pixels
      */
-    public static Set<Point> findBoundary(Point[][] pixels, Set<Point> H, Type connectivity) {
+    public static Set<Point> findBoundary(Point[][] pixels, Set<Point> H, CONNECTIVITY_TYPE connectivity) {
 
         Set<Point> B = new HashSet();
         for (Point p : H) {
@@ -85,7 +113,7 @@ public class ImagePreprocess {
             int y = p.getY();
             for (int i = -1; i <= 1; i += 2) {
                 for (int j = -1; j <= 1; j += 2) {
-                    if (i == j && connectivity == Type.FOUR) {
+                    if (i == j && connectivity == CONNECTIVITY_TYPE.FOUR) {
                         // if FOUR, skip diagonal neighbors
                         continue;
                     }

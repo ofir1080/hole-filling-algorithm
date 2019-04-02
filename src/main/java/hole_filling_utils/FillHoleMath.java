@@ -1,4 +1,6 @@
-package FillingHole;
+package hole_filling_utils;
+
+//import unused.Image;
 
 import java.util.Set;
 
@@ -9,17 +11,17 @@ public class FillHoleMath {
     static float epsilon = 0.001f;
 
 
-    public static void fillHole(Image image) {
+    public static void fillHole(Set<Point> H, Set<Point> B) {
 
         // shall be called outside
         WeightFunction w = (Point u, Point v) -> (float) (1 / (Math.pow(euclideanDist(u , v), z)) + epsilon);
 
-        for (Point h : image.getHole()) {
-            h.setValue(calcColor(h, image.getBoundary(), w));
+        for (Point h : H) {
+            h.setValue(calcColor(h, B, w));
         }
     }
 
-    public static float calcColor(Point h, Set<Point> B, WeightFunction w) {
+    private static float calcColor(Point h, Set<Point> B, WeightFunction w) {
 
         float numerator = 0;
         float denominator = 0;

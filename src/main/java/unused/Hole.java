@@ -1,8 +1,10 @@
-package FillingHole;
+package unused;
+
+import hole_filling_utils.Point;
 
 import java.util.HashSet;
 
-public class Hole extends Point{
+public class Hole extends Point {
 
 //    private int boudaryType;
     private HashSet<Point> boundery;
