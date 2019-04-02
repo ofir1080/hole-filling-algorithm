@@ -1,5 +1,7 @@
 package FillingHole;
 
+import java.util.Set;
+
 public class FillHoleMath {
 
     //TODO: set z and epsilon to final
@@ -7,26 +9,28 @@ public class FillHoleMath {
     static float epsilon = 0.001f;
 
 
-    // TODO: try to deliver (weight) function
-    public static float calcColor(Hole h, WeightFunction f) {
+    public static void fillHole(Image image) {
 
         // shall be called outside
-        f = (Point u, Point v) -> (float) (1 / (Math.pow(euclideanDist(u , v), z)) + epsilon);
+        WeightFunction w = (Point u, Point v) -> (float) (1 / (Math.pow(euclideanDist(u , v), z)) + epsilon);
+
+        for (Point h : image.getHole()) {
+            h.setValue(calcColor(h, image.getBoundary(), w));
+        }
+    }
+
+    public static float calcColor(Point h, Set<Point> B, WeightFunction w) {
 
         float numerator = 0;
         float denominator = 0;
 
-        for (Point p : h.getBoundery()) {
-            float weight = f.weight(h, p);
-            numerator += weight * p.getValue();
+        for (Point b :B) {
+            float weight = w.weight(h, b);
+            numerator += weight * b.getValue();
             denominator += weight;
         }
 
         return numerator / denominator;
-    }
-
-    private static float calcWeight(Point h, Point p) {
-        return (float) (1 / (Math.pow(euclideanDist(h , p), z)) + epsilon);
     }
 
     public static float euclideanDist(Point p1, Point p2) {
@@ -34,16 +38,5 @@ public class FillHoleMath {
         float xVal = p1.getX() - p2.getX();
         float yVal = p1.getY() - p2.getY();
         return (float) (Math.sqrt(xVal * xVal + yVal * yVal));
-    }
-
-    //TODO
-    private void findHole() {
-
-    }
-
-
-    //TODO
-    private void fillHole() {
-
     }
 }

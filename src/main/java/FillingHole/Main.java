@@ -12,33 +12,47 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedImage  image;
         int width;
         int height;
 
         File input = new File("grayscale.jpg");
-        image = ImageIO.read(input);
-        width = image.getWidth();
-        height = image.getHeight();
-
-        for(int i=0; i<height; i++) {
-
-            for(int j=0; j<width; j++) {
-
-                Color c = new Color(image.getRGB(j, i));
-                int red = (int)(c.getRed() * 0.299);
-                int green = (int)(c.getGreen() * 0.587);
-                int blue = (int)(c.getBlue() *0.114);
-                int value = (red+green+blue / 3) > 128 ? 255 : 0;
-//                int value = red + green + blue;
-                Color newColor = new Color(value, value, value);
-
-                image.setRGB(j,i,newColor.getRGB());
+        BufferedImage b = ImageIO.read(input);
+        Image image = new Image(b, Type.FOUR);
+        System.out.println(b.getRGB(1,1));
+        for (int i = 0; i < image.pixels.length; i++) {
+            for (int j = 0; j < image.pixels[0].length; j++) {
+                System.out.print(image.pixels[i][j].getValue());
             }
+            System.out.println();
         }
 
-        File ouptut = new File("binary.jpg");
-        ImageIO.write(image, "jpg", ouptut);
+//        BufferedImage  image;
+//        int width;
+//        int height;               File input = new File("binary.jpg");
+//         image = ImageIO.read(input);
+//         width = image.getWidth();
+//         height = image.getHeight();
+//        System.out.println(image.getRGB(1,1));
+//
+//         for(int i=0; i<height; i++) {
+//
+//            for(int j=0; j<width; j++) {
+//
+//               Color c = new Color(image.getRGB(j, i));
+//               int red = (int)(c.getRed() * 0.299);
+//               int green = (int)(c.getGreen() * 0.587);
+//               int blue = (int)(c.getBlue() *0.114);
+//               Color newColor = new Color(red+green+blue,
+//
+//               red+green+blue,red+green+blue);
+//
+//               image.setRGB(j,i,newColor.getRGB());
+//            }
+//         }
+//
+////         File ouptut = new File("coinBIN.jpg");
+////         ImageIO.write(image, "jpg", ouptut);
+
 
 
 
