@@ -2,23 +2,25 @@ package FillingHole;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.HashSet;
-import javax.imageio.ImageIO;
+import java.util.Set;
 
+//TODO is enum needed?
+enum Type { FOUR, EIGHT }
 
 public class Image {
 
 
+    private final float threshold = .5f;
     //TODO: add weighting function
 //    private BufferedImage img; - NEEDED?
-    private Point[][] values;
-    private HashSet<Point> boundary;
-    private HashSet<Point> hole;
+    private Point[][] pixels;
+    private Set<Point> boundary;
+    private Set<Point> hole;
     private float[][] mask; // NEEDED?
     private int height;
     private int width;
+    private Type connectivity;
 
 
 
@@ -26,7 +28,7 @@ public class Image {
 
         this.width = image.getWidth();
         this.height = image.getHeight();
-        this.values = new Point[height][width];
+        this.pixels = new Point[height][width];
         this.mask = new float[height][width];
 
         // converts RGB to a float in the closed interval [0,1]
@@ -37,20 +39,45 @@ public class Image {
                 int green = (int) (c.getGreen() * 0.587);
                 int blue = (int) (c.getBlue() * 0.114);
                 float value = (float) (red + green + blue) / 255;
-                values[i][j] = new Point(i, j, value);
-                mask[i][j] = value > .5 ? 0 : -1;
+                Point p = new Point(i ,j, value);
+                pixels[i][j] = p;
+                // updates mask
+                if (value > .5) {
+                    mask[i][j] = 0;
+                } else {
+                    // if p is part of the hole, added to the set
+                    mask[i][j] = -1;
+                    hole.add(p);
+                }
+                if (isBoundaryHole())
             }
         }
-
     }
 
-    private boolean isHole(int x, int y) {
-        return this.values[x][y].getValue() == -1;
+    private boolean isHole(int y, int x) {
+        return this.mask[y][x] == -1;
     }
 
+    private createMatrices()
 
-    private HashSet<Point> findBoundary(Point[][] values, float[][] mask, Type t) {
-        return null;
+    private void createBoundary(Type c) {
 
+        for (Point p : this.hole) {
+            int x = p.getX();
+            int y = p.getY();
+            for (int i = -1; i <= 1; i += 2) {
+                for (int j = -1; j <= 1; j += 2) {
+                    if (i == j && c == Type.FOUR ) {
+                        // if FOUR, skip diagonal neighbors
+                        continue;
+                    }
+                    if (!isHole(y + i, x + j)) {
+                        this.boundary.add(pixels[y + i][x + j]);
+                    }
+                }
+            }
+        }
     }
+
+    private
 }

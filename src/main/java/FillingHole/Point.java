@@ -1,7 +1,5 @@
 package FillingHole;
 
-//TODO is enum needed?
-enum Type { FOREGROUND, BOUNDARY, HOLE }
 
 public class Point {
 
@@ -11,7 +9,7 @@ public class Point {
 //    private Type pointType;
 
 
-    public Point(int x, int y, float value) {
+    public Point(int y, int x, float value) {
         this.x = x;
         this.y = y;
         this.value = value;
