@@ -4,28 +4,12 @@
     <list default="true" id="a70dd71f-ce63-445b-a76f-ab4526209d5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/FillHoleMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/Hole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/Image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/InvalidPixelConnectivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FillingHole/WeightFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/HoleFillingUtility-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/HoleFillingUtility-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/FillingHole/Hole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/FillingHole/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/FillingHole/WeightFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/FillHoleMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hole_filling_utils/FillHoleMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/Hole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unused/Hole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unused/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/ImagePreprocess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hole_filling_utils/ImagePreprocess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hole_filling_utils/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FillingHole/WeightFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hole_filling_utils/WeightFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command_line_utility/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hole_filling_utils/ImagePreprocess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hole_filling_utils/ImageProcess.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -82,105 +66,91 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="COMMIT_EDITMSG" value="1" />
+          <entry key="HEAD" value="1" />
+          <entry key="description" value="1" />
+          <entry key="exclude" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="9" />
-          <entry key="jpg" value="2" />
+          <entry key="java" value="14" />
+          <entry key="jpg" value="14" />
+          <entry key="master" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="Image" value="2" />
-          <entry key="JAVA" value="9" />
+          <entry key="Image" value="14" />
+          <entry key="JAVA" value="14" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="37" />
-          <entry key="gradle" value="24" />
-          <entry key="java" value="4388" />
-          <entry key="txt" value="179" />
+          <entry key="gradle" value="34" />
+          <entry key="java" value="5740" />
+          <entry key="txt" value="215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="24" />
-          <entry key="JAVA" value="4388" />
-          <entry key="PLAIN_TEXT" value="216" />
+          <entry key="Groovy" value="34" />
+          <entry key="JAVA" value="5740" />
+          <entry key="PLAIN_TEXT" value="252" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/ImagePreprocess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4167#4168#0" expanded="true" />
-                <element signature="e#4208#4209#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/clu/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/unused/Image.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="22" column="23" selection-start-column="2" selection-end-line="132" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grayscale.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/FillHoleMath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6014084">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/ImageProcess.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="481">
+                  <caret line="158" column="74" lean-forward="true" selection-start-line="158" selection-start-column="74" selection-end-line="158" selection-end-column="74" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/command_line_utility/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="183">
+                  <caret line="39" column="95" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="95" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/digital_image_processingGS.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test2.jpg">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -195,7 +165,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -370,9 +340,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6216839203000" />
+        <entry key="$PROJECT_DIR$" value="6216895431000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1045169642" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2579574840" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="941320039" />
       </map>
@@ -581,8 +551,11 @@
         <option value="$PROJECT_DIR$/src/main/java/unused/Image.java" />
         <option value="$PROJECT_DIR$/src/main/java/clu/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/hole_filling_utils/FillHoleMath.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/hole_filling_utils/ImagePreprocess.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/logs/HEAD" />
+        <option value="$PROJECT_DIR$/src/main/java/command_line_utility/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hole_filling_utils/ImageProcess.java" />
       </list>
     </option>
   </component>
@@ -619,6 +592,24 @@
             <path>
               <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
               <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="refs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="refs" type="462c0819:PsiDirectoryNode" />
+              <item name="heads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -633,23 +624,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clu" type="462c0819:PsiDirectoryNode" />
-              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
@@ -658,6 +632,21 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hole_filling_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hole_filling_utils" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageProcess.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -668,7 +657,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554231583564" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554320760789" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -685,13 +674,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HoleFillingUtility [build]">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="clu.Main" />
+      <option name="MAIN_CLASS_NAME" value="command_line_utility.Main" />
       <module name="HoleFillingUtility_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="clu.*" />
+          <option name="PATTERN" value="command_line_utility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -717,14 +706,34 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="HoleFillingUtility [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.HoleFillingUtility [build]" />
+      <item itemvalue="Gradle.HoleFillingUtility [clean]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.HoleFillingUtility [build]" />
+        <item itemvalue="Gradle.HoleFillingUtility [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -738,7 +747,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554199693699</updated>
-      <workItem from="1554199694876" duration="19788000" />
+      <workItem from="1554199694876" duration="32647000" />
     </task>
     <task id="LOCAL-00001" summary="Created findBoundary()">
       <created>1554205095458</created>
@@ -761,11 +770,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554221683343</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added convertMaskToBinary method to ImagePreprocess.">
+      <created>1554232986285</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554232986285</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19788000" />
+    <option name="totallyTimeSpent" value="32647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -785,7 +801,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17704518" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13308914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.32949308" />
       <window_info anchor="bottom" id="Build" weight="0.14976959" />
@@ -796,8 +812,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.32949308" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.140553" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949308" />
@@ -805,7 +821,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Gradle" weight="0.1910867" />
+      <window_info anchor="right" id="Gradle" weight="0.13308914" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -854,7 +870,8 @@
     <MESSAGE value="Created findBoundary()" />
     <MESSAGE value="Arranged class Image" />
     <MESSAGE value="Created static ImagePreprocess calss and implemented findBoundary, convert and findHole functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created static ImagePreprocess calss and implemented findBoundary, convert and findHole functions" />
+    <MESSAGE value="Added convertMaskToBinary method to ImagePreprocess." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added convertMaskToBinary method to ImagePreprocess." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/Point.java">
@@ -874,12 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hole_test.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grayscale.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/WeightFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -887,45 +898,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/unused/Image.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="23" selection-start-column="2" selection-end-line="132" selection-end-column="3" />
+        <state relative-caret-position="420">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/description">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMMIT_EDITMSG">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/refs/heads/master">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/HEAD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="182" selection-start-line="8" selection-start-column="182" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info/exclude">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grayscaled.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grayscale.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/unused/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hole_test.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_frac.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital_image_processing.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/FillHoleMath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        <state relative-caret-position="81">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/digital_image_processingGS.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/clu/Main.java">
+    <entry file="file://$PROJECT_DIR$/test.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/command_line_utility/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="183">
+          <caret line="39" column="95" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/ImagePreprocess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hole_filling_utils/ImageProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="481">
+          <caret line="158" column="74" lean-forward="true" selection-start-line="158" selection-start-column="74" selection-end-line="158" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4167#4168#0" expanded="true" />
-            <element signature="e#4208#4209#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,25 +1,23 @@
-package clu;
+package command_line_utility;
 
-import hole_filling_utils.FillHoleMath;
-import hole_filling_utils.Point;
-import hole_filling_utils.WeightFunction;
 //import unused.Image;
 
+import hole_filling_utils.ImageProcess;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import javax.imageio.ImageIO;
 
 
 public class Main {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        int width;
-        int height;
 
 //        File input = new File("grayscale.jpg");
 //        BufferedImage b = ImageIO.read(input);
@@ -32,37 +30,39 @@ public class Main {
 //            System.out.println();
 //        }
 
-//        BufferedImage  image;
-//        int width;
-//        int height;               File input = new File("binary.jpg");
-//         image = ImageIO.read(input);
-//         width = image.getWidth();
-//         height = image.getHeight();
-//        System.out.println(image.getRGB(1,1));
-//
-//         for(int i=0; i<height; i++) {
-//
-//            for(int j=0; j<width; j++) {
-//
-//               Color c = new Color(image.getRGB(j, i));
-//               int red = (int)(c.getRed() * 0.299);
-//               int green = (int)(c.getGreen() * 0.587);
-//               int blue = (int)(c.getBlue() *0.114);
-//               Color newColor = new Color(red+green+blue,
-//
-//               red+green+blue,red+green+blue);
-//
-//               image.setRGB(j,i,newColor.getRGB());
-//            }
-//         }
-//
-////         File ouptut = new File("coinBIN.jpg");
-////         ImageIO.write(image, "jpg", ouptut);
+        BufferedImage image;
+        int width;
+        int height;
+        File input = new File("/Users/ofir1080/dev/HoleFillingUtility/digital_image_processing.jpg");
+         image = ImageIO.read(input);
+         width = image.getWidth();
+         height = image.getHeight();
+        BufferedImage filledImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+
+         for(int i=0; i<height; i++) {
+
+            for(int j=0; j<width; j++) {
+
+               Color c = new Color(image.getRGB(j, i));
+               int red = (int)(c.getRed() * 0.299);
+               int green = (int)(c.getGreen() * 0.587);
+               int blue = (int)(c.getBlue() *0.114);
+               float val = (float) (c.getBlue() + c.getGreen() + c.getRed()) / (3 * 255);
+               Color newColor = new Color(val, val, val);
+
+               filledImage.setRGB(j,i,newColor.getRGB());
+            }
+         }
+
+         File ouptut = new File("test2.jpg");
+         ImageIO.write(filledImage, "jpg", ouptut);
 
 
-        System.out.println("[image path] [z] [epsilon] [pixel connectivity: 4/8]");
-        Scanner in = new Scanner(System.in);
-        System.out.println(in.next());
+//        System.out.println("[image path] [z] [epsilon] [pixel connectivity: 4/8]");
+//        Scanner in = new Scanner(System.in);
+//        System.out.println(in.next());
+
+//        ImageProcess.fillAndSave("/Users/ofir1080/dev/HoleFillingUtility/digital_image_processing.jpg");
 
 //        System.out.println("[image path] [z] [epsilon] [pixel connectivity: 4/8]");
 //        Scanner in = new Scanner(System.in);

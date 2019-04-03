@@ -1,5 +1,7 @@
 package hole_filling_utils;
 
+//import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -7,6 +9,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 enum CONNECTIVITY_TYPE { FOUR, EIGHT }
@@ -16,7 +20,7 @@ enum CONNECTIVITY_TYPE { FOUR, EIGHT }
  *  and hole values which are marked with the value ​-1​
  *
  */
-public class ImagePreprocess {
+public class ImageProcess {
 
     /**
      * returns a 2d array of bool (mask). mask[i][j] is true iff its pixel tends to black (that is, a hole pixel in main image), false otherwise
@@ -70,15 +74,18 @@ public class ImagePreprocess {
         return pixels;
     }
 
+    /**
+     * converts an RGB color to grayscale using avg, then divides by 255 to get a value in [0,1]
+     * @param c color
+     * @return grayscaled normalized value
+     */
     private static float rgbToGrayscale(Color c) {
 
-        // if pixel (i, j) is not a hole converts RGB values to grayscale using weights
-        // (NOTE that weights sum is 1)
-        int red = (int) (c.getRed() * 0.299);
-        int green = (int) (c.getGreen() * 0.587);
-        int blue = (int) (c.getBlue() * 0.114);
+        int red = c.getRed();
+        int green = c.getGreen();
+        int blue = c.getBlue();
 
-        return (float) (red + green + blue) / 255;
+        return (float) (red + green + blue) / (3 * 255);
     }
 
     /**
@@ -128,6 +135,35 @@ public class ImagePreprocess {
 
     private static boolean isHole(Point p) {
         return p.getValue() == -1;
+    }
+
+    /**
+     * created an image file related to the matrix with filled hole
+     * @param pixels matrix represent final pixel values
+     * @param pathname
+     * @throws IOException
+     */
+    public static void fillAndSave(Point[][] pixels, String pathname) throws IOException {
+
+        // extracts PATH+name and format
+        Pattern p = Pattern.compile("(.*)\\.(.*)");
+        Matcher m = p.matcher(pathname);
+        m.find();
+        String path = m.group(1);
+        String format = "format: " + m.group(2);
+
+        BufferedImage filledImage = new BufferedImage(pixels[0].length, pixels.length, BufferedImage.TYPE_INT_RGB);
+        for (int i = 0; i < pixels.length; i++) {
+            for (int j = 0; j < pixels[0].length; j++) {
+                // iterates all pixels and creates the related color value
+                float holePixelColor = pixels[i][j].getValue();
+                Color c = new Color(holePixelColor, holePixelColor, holePixelColor);
+                filledImage.setRGB(j, i, c.getRGB());
+            }
+        }
+        File ouptut = new File(path + "_FILLED." + format);
+        ImageIO.write(filledImage, format, ouptut);
+        System.out.println("Saved image in current directory.");
     }
 
 }
