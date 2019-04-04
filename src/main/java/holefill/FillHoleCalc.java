@@ -1,21 +1,15 @@
-package hole_filling_utils;
+package holefill;
 
-//import unused.Image;
-
+import cmdutil.WeightFunction;
 import java.util.Set;
 
-public class FillHoleMath {
 
-    //TODO: set z and epsilon to final
-    static float z = 2;
-    static float epsilon = 0.001f;
+public class FillHoleCalc {
 
+    public static void fillHole(Point[][] pixels, WeightFunction w) {
 
-    public static void fillHole(Set<Point> H, Set<Point> B) {
-
-        // shall be called outside
-        WeightFunction w = (Point u, Point v) -> (float) (1 / (Math.pow(euclideanDist(u , v), z)) + epsilon);
-
+        Set<Point> H = ImageProcess.findHole(pixels);
+        Set<Point> B = ImageProcess.findBoundary(pixels, H, CONNECTIVITY_TYPE.EIGHT);
         for (Point h : H) {
             h.setValue(calcColor(h, B, w));
         }
@@ -26,12 +20,11 @@ public class FillHoleMath {
         float numerator = 0;
         float denominator = 0;
 
-        for (Point b :B) {
+        for (Point b : B) {
             float weight = w.weight(h, b);
             numerator += weight * b.getValue();
             denominator += weight;
         }
-
         return numerator / denominator;
     }
 

@@ -1,6 +1,6 @@
 //package unused;
 //
-//import hole_filling_utils.Point;
+//import Point;
 //
 //import java.awt.*;
 //import java.awt.image.BufferedImage;
@@ -14,9 +14,9 @@
 //
 //    private final float threshold = .5f; // default threshold to separate hole pixels
 //    //TODO: add weighting function
-//    public hole_filling_utils.Point[][] pixels;
-//    private Set<hole_filling_utils.Point> boundary;
-//    private Set<hole_filling_utils.Point> hole;
+//    public Point[][] pixels;
+//    private Set<Point> boundary;
+//    private Set<Point> hole;
 //    private float[][] mask; // NEEDED?
 //    private int height;
 //    private int width;
@@ -28,7 +28,7 @@
 //        this.width = bImage.getWidth();
 //        this.height = bImage.getHeight();
 //        this.connectivity = connectivity;
-//        this.pixels = new hole_filling_utils.Point[height][width];
+//        this.pixels = new Point[height][width];
 //        this.mask = new float[height][width]; // NEEDED?
 //        this.hole = new HashSet<>();
 //        this.boundary = new HashSet<>();
@@ -43,11 +43,11 @@
 //    }
 //
 //
-//    public Set<hole_filling_utils.Point> getBoundary() {
+//    public Set<Point> getBoundary() {
 //        return boundary;
 //    }
 //
-//    public Set<hole_filling_utils.Point> getHole() {
+//    public Set<Point> getHole() {
 //        return hole;
 //    }
 //
@@ -69,7 +69,7 @@
 //                // converts sum to a fraction in the closed interval [0,1]
 //                float frac_value = (float) (red + green + blue) / 255;
 //                float value = frac_value > .5 ? frac_value : -1;
-//                hole_filling_utils.Point p = new hole_filling_utils.Point(i, j, value);
+//                Point p = new Point(i, j, value);
 //                if (frac_value < .5) {
 //                    pixels[i][j] = p;
 //                }
@@ -99,7 +99,7 @@
 //
 //                // converts sum to a fraction in the closed interval [0,1]
 //                float frac_value = (float) (red + green + blue) / 255;
-//                hole_filling_utils.Point p = new hole_filling_utils.Point(i, j, frac_value);
+//                Point p = new Point(i, j, frac_value);
 //                pixels[i][j] = p;
 //            }
 //        }

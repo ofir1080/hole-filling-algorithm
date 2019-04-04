@@ -1,4 +1,6 @@
-package hole_filling_utils;
+package cmdutil;
+
+import holefill.Point;
 
 @FunctionalInterface
 public interface WeightFunction {

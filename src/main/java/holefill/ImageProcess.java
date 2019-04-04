@@ -1,4 +1,4 @@
-package hole_filling_utils;
+package holefill;
 
 //import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 
@@ -23,69 +23,80 @@ enum CONNECTIVITY_TYPE { FOUR, EIGHT }
 public class ImageProcess {
 
     /**
-     * returns a 2d array of bool (mask). mask[i][j] is true iff its pixel tends to black (that is, a hole pixel in main image), false otherwise
+     * return a 2d array of pixels type Point, where a hole pixel value is -1, otherwise converts its value (color) to fractional grayscale value
+     * @param imagePath
      * @param maskPath
-     * @return a 2 boolean array indicates 'hole pixels' in main image
+     * @return 2d array of pixels in the required format
      * @throws IOException
      */
-    public boolean[][] convertMaskToBinary(String maskPath) throws IOException {
+    public static Point[][] preprocess(String imagePath, String maskPath) throws IOException {
 
+        BufferedImage image = ImageIO.read(new File(imagePath));
         BufferedImage maskBuffer = ImageIO.read(new File(maskPath));
         int width = maskBuffer.getWidth();
         int height = maskBuffer.getHeight();
-        boolean[][] mask = new boolean[height][width];
-
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                Color c = new Color(maskBuffer.getRGB(j, i));
-                mask[i][j] = rgbToGrayscale(c) > .5;
-            }
-        }
-        return mask;
-    }
-
-    /**
-     * return a 2d array of pixels type Point, where a hole pixel value is -1
-     *
-     * @param imagePath main image pathname
-     * @param mask 2d boolean array represents a binary image
-     * @return a 2d array of pixels with values in [0,1]
-     */
-    public static Point[][] convertToGrayscale(String imagePath, boolean[][] mask) throws IOException {
-
-        BufferedImage image = ImageIO.read(new File(imagePath));
-        int width = image.getWidth();
-        int height = image.getHeight();
         Point[][] pixels = new Point[height][width];
 
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
 
-                Color iColor = new Color(image.getRGB(j, i));
                 float value = -1f;
-                if (!mask[i][j]) {
+                Color c = new Color(maskBuffer.getRGB(j, i));
+//                System.out.print(maskBuffer.getRGB(j, i));
+                if (rgbToGrayscale(c) > .5) {
                     // if pixel (j,i) is not a 'hole pixel' convert its color to grayscale
-                    value = rgbToGrayscale(iColor);
+                    Color pixelColor = new Color(image.getRGB(j, i));
+                    value = rgbToGrayscale(pixelColor);
                 }
-                // converts sum to a fraction in the closed interval [0,1]
                 pixels[i][j] = new Point(i, j, value);
+//                System.out.print(value);
             }
+//            System.out.println();
         }
         return pixels;
     }
 
+//    /**
+//     * return a 2d array of pixels type Point, where a hole pixel value is -1
+//     *
+//     * @param imagePath main image pathname
+//     * @param mask 2d boolean array represents a binary image
+//     * @return a 2d array of pixels with values in [0,1]
+//     */
+//    public static Point[][] convertToGrayscale(String imagePath, boolean[][] mask) throws IOException {
+//
+//        BufferedImage image = ImageIO.read(new File(imagePath));
+//        int width = image.getWidth();
+//        int height = image.getHeight();
+//        Point[][] pixels = new Point[height][width];
+//
+//        for (int i = 0; i < height; i++) {
+//            for (int j = 0; j < width; j++) {
+//
+//                Color pixelColor = new Color(image.getRGB(j, i));
+//                float value = -1f;
+//                if (!mask[i][j]) {
+//                    // if pixel (j,i) is not a 'hole pixel' convert its color to grayscale
+//                    value = rgbToGrayscale(pixelColor);
+//                }
+//                // converts sum to a fraction in the closed interval [0,1]
+//                pixels[i][j] = new Point(i, j, value);
+//
+//            }
+//        }
+//
+//        return pixels;
+//    }
+
     /**
-     * converts an RGB color to grayscale using avg, then divides by 255 to get a value in [0,1]
+     * converts an RGB color to grayscale using avg, then divides it by 255 to get a value in interval [0,1]
      * @param c color
      * @return grayscaled normalized value
      */
     private static float rgbToGrayscale(Color c) {
 
-        int red = c.getRed();
-        int green = c.getGreen();
-        int blue = c.getBlue();
-
-        return (float) (red + green + blue) / (3 * 255);
+        float avg = (c.getRed() + c.getGreen() + c.getBlue()) / 3;
+        return avg / 255;
     }
 
     /**
@@ -118,14 +129,15 @@ public class ImageProcess {
         for (Point p : H) {
             int x = p.getX();
             int y = p.getY();
-            for (int i = -1; i <= 1; i += 2) {
-                for (int j = -1; j <= 1; j += 2) {
-                    if (i == j && connectivity == CONNECTIVITY_TYPE.FOUR) {
+            for (int i = -1; i <= 1; i++) {
+                for (int j = -1; j <= 1; j++) {
+                    if (connectivity == CONNECTIVITY_TYPE.FOUR && Math.abs(i) + Math.abs(j) == 2) {
                         // if FOUR, skip diagonal neighbors
                         continue;
                     }
-                    if (isHole(pixels[y + i][x + j])) {
+                    if (!isHole(pixels[y + i][x + j])) {
                         B.add(pixels[y + i][x + j]);
+//                        System.out.println("(" + (y + j) + "," + (x + i) + ")");
                     }
                 }
             }
@@ -138,7 +150,7 @@ public class ImageProcess {
     }
 
     /**
-     * created an image file related to the matrix with filled hole
+     * creates an image file related to the matrix with a filled hole
      * @param pixels matrix represent final pixel values
      * @param pathname
      * @throws IOException
@@ -150,19 +162,20 @@ public class ImageProcess {
         Matcher m = p.matcher(pathname);
         m.find();
         String path = m.group(1);
-        String format = "format: " + m.group(2);
+        String format = m.group(2);
 
         BufferedImage filledImage = new BufferedImage(pixels[0].length, pixels.length, BufferedImage.TYPE_INT_RGB);
         for (int i = 0; i < pixels.length; i++) {
             for (int j = 0; j < pixels[0].length; j++) {
                 // iterates all pixels and creates the related color value
                 float holePixelColor = pixels[i][j].getValue();
+//                System.out.println(holePixelColor);
                 Color c = new Color(holePixelColor, holePixelColor, holePixelColor);
                 filledImage.setRGB(j, i, c.getRGB());
             }
         }
-        File ouptut = new File(path + "_FILLED." + format);
-        ImageIO.write(filledImage, format, ouptut);
+        File output = new File( "/Users/ofir1080/dev/HoleFillingUtility/images/hole_test_FILLED.jpg" );//path + "_FILLED." + format);
+        ImageIO.write(filledImage, format, output);
         System.out.println("Saved image in current directory.");
     }
 

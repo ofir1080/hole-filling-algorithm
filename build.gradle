@@ -1,5 +1,10 @@
 plugins {
-    id 'java'
+//    id 'java'
+    id 'application'
+}
+//
+application {
+    mainClassName = 'cmdutil.Main'
 }
 
 group 'com.holefill'
@@ -13,6 +18,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
 }
 
 jar {
@@ -20,26 +26,3 @@ jar {
         attributes 'Main-Class': 'command_line_utility.Main'
     }
 }
-
-//plugins {
-////    id 'java'
-//    id 'application'
-//}
-//
-//group 'com.holefill'
-//version '1.0-SNAPSHOT'
-//
-//application {
-//    mainClassName = 'Main'
-//}
-//
-//sourceCompatibility = 1.8
-//
-//repositories {
-//    mavenCentral()
-//}
-//
-//dependencies {
-//    testCompile group: 'junit', name: 'junit', version: '4.12'
-//    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
-//}

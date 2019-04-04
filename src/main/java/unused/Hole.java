@@ -1,6 +1,6 @@
 package unused;
 
-import hole_filling_utils.Point;
+import holefill.Point;
 
 import java.util.HashSet;
 
