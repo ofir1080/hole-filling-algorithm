@@ -11,6 +11,7 @@ public class ImageProcessTest {
 
     private Point[][] testImage;
     private Set<Point> testHole;
+    Set<Point> correctBoundary;
 
 
     @Before
@@ -40,7 +41,7 @@ public class ImageProcessTest {
             testHole.add(testImage[i][i]);
         }
 
-        Set<Point> correctBoundary = new HashSet<>();
+        correctBoundary = new HashSet<>();
         // creates boundary mutually
         correctBoundary.add(testImage[10][9]);
         correctBoundary.add(testImage[90][91]);
@@ -69,7 +70,7 @@ public class ImageProcessTest {
         testImage[34][55] = new Point(34,55, -1);
         testHole.add(testImage[34][55]);
 
-        Set<Point> correctBoundary = new HashSet<>();
+        correctBoundary = new HashSet<>();
         correctBoundary.add(testImage[33][55]);
         correctBoundary.add(testImage[35][55]);
         correctBoundary.add(testImage[34][54]);
@@ -87,6 +88,113 @@ public class ImageProcessTest {
     }
 
     @Test
-    public void fillAndSave() {
+    public void findBoundaryLineTest() {
+
+        // test for horizontal 1-pixel height hole
+        testHole = new HashSet();
+        for (int i = 6; i <= 68; i++) {
+            testImage[39][i].setValue(-1);
+            testHole.add(testImage[39][i]);
+        }
+
+        correctBoundary = new HashSet<>();
+        for (int i = 6; i <= 68; i++) {
+            correctBoundary.add(testImage[40][i]);
+            correctBoundary.add(testImage[38][i]);
+        }
+        correctBoundary.add(testImage[39][69]);
+        correctBoundary.add(testImage[39][5]);
+
+        // test 4-connectivity
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+
+        correctBoundary.add(testImage[38][5]);
+        correctBoundary.add(testImage[40][5]);
+        correctBoundary.add(testImage[38][69]);
+        correctBoundary.add(testImage[40][69]);
+        // test 8-connectivity
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.EIGHT), correctBoundary);
+
     }
+
+    @Test
+    public void findBoundaryPyramidTest() {
+
+        testHole = new HashSet();
+        correctBoundary = new HashSet<>();
+
+        testImage[50][50].setValue(-1);
+        testHole.add(testImage[50][50]);
+
+        testImage[51][50].setValue(-1);
+        testHole.add(testImage[51][50]);
+
+        testImage[51][51].setValue(-1);
+        testHole.add(testImage[51][51]);
+
+        testImage[51][49].setValue(-1);
+        testHole.add(testImage[51][49]);
+
+        correctBoundary = new HashSet<>();
+
+        correctBoundary.add(testImage[52][51]);
+        correctBoundary.add(testImage[52][50]);
+        correctBoundary.add(testImage[52][49]);
+
+        correctBoundary.add(testImage[51][52]);
+        correctBoundary.add(testImage[51][48]);
+
+        correctBoundary.add(testImage[50][49]);
+        correctBoundary.add(testImage[50][51]);
+
+        correctBoundary.add(testImage[49][50]);
+        // test 4-connectivity
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+
+    }
+
+    @Test
+    public void findBoundaryRandomHoleTestExtended() {
+
+        testHole = new HashSet();
+        correctBoundary = new HashSet<>();
+
+        correctBoundary.add(testImage[39][40]);
+        int k = 1;
+        for (int i = 40; i <= 50; i++) {
+            for (int j = 0; j < k; j++) {
+                testImage[i][40 + j].setValue(-1);
+                testHole.add(testImage[i][40 + j]);
+                testImage[i][40 - j].setValue(-1);
+                testHole.add(testImage[i][40 - j]);
+            }
+            correctBoundary.add(testImage[i][40 + k]);
+            correctBoundary.add(testImage[i][40 - k]);
+            k++;
+        }
+
+        for (int i = 0; i <= 10; i++) {
+            correctBoundary.add(testImage[51][40 - i]);
+            correctBoundary.add(testImage[51][40 + i]);
+        }
+
+        // test 4-connectivity
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+
+//        correctBoundary.add(testImage[39][39]);
+//        correctBoundary.add(testImage[39][41]);
+        k = 1;
+        for (int i = 39; i < 50; i++) {
+            correctBoundary.add(testImage[i][40 + k]);
+            correctBoundary.add(testImage[i][40 - k]);
+            k++;
+        }
+        correctBoundary.add(testImage[51][40 - 11]);
+        correctBoundary.add(testImage[51][40 + 11]);
+
+        // test 8-connectivity
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.EIGHT), correctBoundary);
+
+    }
+
 }
