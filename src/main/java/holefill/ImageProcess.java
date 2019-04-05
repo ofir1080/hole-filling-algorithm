@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-enum CONNECTIVITY_TYPE { FOUR, EIGHT }
+//enum CONNECTIVITY_TYPE { FOUR, EIGHT }
 
 /**
  *  This class converts an image into a 2d array where each pixel value is a point with ​float a​ in the range ​[0, 1]​,
@@ -123,7 +123,7 @@ public class ImageProcess {
      * @param H set of all hole pixels ( defined with value -1)
      * @return set of all boundary pixels
      */
-    public static Set<Point> findBoundary(Point[][] pixels, Set<Point> H, CONNECTIVITY_TYPE connectivity) {
+    public static Set<Point> findBoundary(Point[][] pixels, Set<Point> H, int cType) {
 
         Set<Point> B = new HashSet();
         for (Point p : H) {
@@ -131,7 +131,7 @@ public class ImageProcess {
             int y = p.getY();
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
-                    if (connectivity == CONNECTIVITY_TYPE.FOUR && Math.abs(i) + Math.abs(j) == 2) {
+                    if (cType == 4 && Math.abs(i) + Math.abs(j) == 2) {
                         // if FOUR, skip diagonal neighbors
                         continue;
                     }

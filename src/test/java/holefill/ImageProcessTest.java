@@ -15,6 +15,9 @@ public class ImageProcessTest {
 
 
     @Before
+    /**
+     * creates a random 100x100 test image
+     */
     public void createRandomImage() {
         testImage = new Point[100][100];
         for (int i = 0; i < testImage.length; i++) {
@@ -27,6 +30,8 @@ public class ImageProcessTest {
 
     @Test
     public void preprocess() {
+
+
     }
 
 

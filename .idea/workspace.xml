@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a70dd71f-ce63-445b-a76f-ab4526209d5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/test2_HOLE.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/test2_MASK.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmdutil/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binary.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/HoleFillingUtility-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/HoleFillingUtility-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coinBIN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/digital_image_processing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/digital_image_processing.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grayscaled.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grayscaledBIN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hole_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command_line_utility/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hole_filling_utils/FillHoleMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hole_filling_utils/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hole_filling_utils/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hole_filling_utils/WeightFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmdutil/WeightFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unused/Hole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unused/Hole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unused/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unused/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cmdutil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmdutil/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -110,17 +89,17 @@
           <entry key="description" value="1" />
           <entry key="exclude" value="1" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="30" />
-          <entry key="jpg" value="49" />
+          <entry key="java" value="39" />
+          <entry key="jpg" value="55" />
           <entry key="master" value="1" />
-          <entry key="png" value="15" />
+          <entry key="png" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="Image" value="64" />
-          <entry key="JAVA" value="30" />
+          <entry key="Image" value="74" />
+          <entry key="JAVA" value="39" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -128,32 +107,64 @@
         <counts>
           <entry key="dummy" value="45" />
           <entry key="gradle" value="79" />
-          <entry key="java" value="8245" />
-          <entry key="txt" value="276" />
+          <entry key="java" value="9913" />
+          <entry key="txt" value="347" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="79" />
-          <entry key="JAVA" value="8245" />
-          <entry key="PLAIN_TEXT" value="321" />
+          <entry key="JAVA" value="9913" />
+          <entry key="PLAIN_TEXT" value="392" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43471918">
+    <splitter split-orientation="horizontal" split-proportion="0.8759124">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="140" column="21" lean-forward="true" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+                <state relative-caret-position="63">
+                  <caret line="20" column="79" lean-forward="true" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/cmdutil/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="267">
+                  <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#5210#5211#0" expanded="true" />
-                    <element signature="e#5251#5252#0" expanded="true" />
+                    <marker date="1554468192680" expanded="true" signature="546:591" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-4">
+                  <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -166,8 +177,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+                <state relative-caret-position="244">
+                  <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -646,9 +657,11 @@
         <option value="$PROJECT_DIR$/src/test/java/hole_filling_utils/ImageProcessTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cmdutil/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java" />
-        <option value="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java" />
       </list>
     </option>
   </component>
@@ -722,7 +735,47 @@
               <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
               <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmdutil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cmdutil" type="462c0819:PsiDirectoryNode" />
+              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="holefill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HoleFillingUtility" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HoleFillingUtility" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="holefill" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -733,7 +786,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554406308201" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554467221091" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -769,24 +822,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImageProcessTest.findBoundarySinglePixelTest">
-    <configuration name="HoleFillingUtility [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.FillHoleCalcTest">
+    <configuration name="FillHoleCalcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HoleFillingUtility_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="holefill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="holefill" />
+      <option name="MAIN_CLASS_NAME" value="holefill.FillHoleCalcTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ImageProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HoleFillingUtility_test" />
@@ -818,6 +867,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImageProcessTest.findBoundaryLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HoleFillingUtility_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="holefill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="holefill" />
+      <option name="MAIN_CLASS_NAME" value="holefill.ImageProcessTest" />
+      <option name="METHOD_NAME" value="findBoundaryLineTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImageProcessTest.findBoundarySinglePixelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HoleFillingUtility_test" />
       <extension name="coverage">
@@ -834,36 +899,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageProcessTest.findBoundarySingleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HoleFillingUtility_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="holefill.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="holefill" />
-      <option name="MAIN_CLASS_NAME" value="holefill.ImageProcessTest" />
-      <option name="METHOD_NAME" value="findBoundarySingleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Gradle.HoleFillingUtility [build]" />
       <item itemvalue="JUnit.ImageProcessTest" />
-      <item itemvalue="JUnit.ImageProcessTest.findBoundarySingleTest" />
       <item itemvalue="JUnit.ImageProcessTest.findBoundarySinglePixelTest" />
       <item itemvalue="JUnit.ImageProcessTest.findBoundaryDiagonalTest" />
+      <item itemvalue="JUnit.ImageProcessTest.findBoundaryLineTest" />
+      <item itemvalue="JUnit.FillHoleCalcTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImageProcessTest.findBoundarySinglePixelTest" />
+        <item itemvalue="JUnit.FillHoleCalcTest" />
         <item itemvalue="JUnit.ImageProcessTest" />
+        <item itemvalue="JUnit.ImageProcessTest.findBoundaryLineTest" />
+        <item itemvalue="JUnit.ImageProcessTest.findBoundarySinglePixelTest" />
         <item itemvalue="JUnit.ImageProcessTest.findBoundaryDiagonalTest" />
-        <item itemvalue="JUnit.ImageProcessTest.findBoundarySingleTest" />
-        <item itemvalue="Gradle.HoleFillingUtility [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -877,7 +926,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554199693699</updated>
-      <workItem from="1554199694876" duration="64341000" />
+      <workItem from="1554199694876" duration="79595000" />
     </task>
     <task id="LOCAL-00001" summary="Created findBoundary()">
       <created>1554205095458</created>
@@ -914,43 +963,57 @@
       <option name="project" value="LOCAL" />
       <updated>1554320932796</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created 2 unit tests for findBoundary function. All Passed">
+      <created>1554406368800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554406368800</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created 4 more unit tests for findBoundary function. All Passed">
+      <created>1554418012147</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554418012147</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImageProcessTest_findBoundarySinglePixelTest - 2019.04.04 at 22h 19m 59s.xml">
-      <configuration name="ImageProcessTest.findBoundarySinglePixelTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 37m 55s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundarySinglePixelTest - 2019.04.04 at 22h 20m 19s.xml">
-      <configuration name="ImageProcessTest.findBoundarySinglePixelTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 50m 23s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundarySinglePixelTest - 2019.04.04 at 22h 21m 04s.xml">
-      <configuration name="ImageProcessTest.findBoundarySinglePixelTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 50m 51s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundarySinglePixelTest - 2019.04.04 at 22h 22m 27s.xml">
-      <configuration name="ImageProcessTest.findBoundarySinglePixelTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 51m 46s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundarySinglePixelTest - 2019.04.04 at 22h 23m 35s.xml">
-      <configuration name="ImageProcessTest.findBoundarySinglePixelTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 52m 05s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundarySinglePixelTest - 2019.04.04 at 22h 25m 38s.xml">
-      <configuration name="ImageProcessTest.findBoundarySinglePixelTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 52m 22s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest - 2019.04.04 at 22h 25m 52s.xml">
-      <configuration name="ImageProcessTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 15h 13m 53s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundaryDiagonalTest - 2019.04.04 at 22h 29m 12s.xml">
-      <configuration name="ImageProcessTest.findBoundaryDiagonalTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 15h 14m 13s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundaryDiagonalTest - 2019.04.04 at 22h 29m 22s.xml">
-      <configuration name="ImageProcessTest.findBoundaryDiagonalTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 15h 14m 28s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ImageProcessTest_findBoundaryDiagonalTest - 2019.04.04 at 22h 29m 29s.xml">
-      <configuration name="ImageProcessTest.findBoundaryDiagonalTest" configurationId="JUnit" />
+    <history-entry file="FillHoleCalcTest - 2019.04.05 at 15h 14m 59s.xml">
+      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64341000" />
+    <option name="totallyTimeSpent" value="79595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -970,7 +1033,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2008547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.32949308" />
       <window_info anchor="bottom" id="Build" weight="0.14976959" />
@@ -981,11 +1044,11 @@
       <window_info anchor="bottom" id="Messages" weight="0.32949308" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993895" visible="true" weight="0.33410138" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" visible="true" weight="0.33410138" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32949308" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.15552996" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Database" weight="0.32967034" />
@@ -1041,7 +1104,9 @@
     <MESSAGE value="Created static ImagePreprocess calss and implemented findBoundary, convert and findHole functions" />
     <MESSAGE value="Added convertMaskToBinary method to ImagePreprocess." />
     <MESSAGE value="Implemented ImageProcess.fillAndSave function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented ImageProcess.fillAndSave function." />
+    <MESSAGE value="Created 2 unit tests for findBoundary function. All Passed" />
+    <MESSAGE value="Created 4 more unit tests for findBoundary function. All Passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created 4 more unit tests for findBoundary function. All Passed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/holefill/Point.java">
@@ -1148,18 +1213,6 @@
     <entry file="file://$PROJECT_DIR$/images/digital_image_processing_HOLE.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/digital_image_processing.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/digital_image_processing_MASK.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/hole_test_FILLED.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/digital_image_processing_HOLE.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/unused/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1174,40 +1227,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cmdutil/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1554398614329" expanded="true" signature="427:472" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1219,25 +1244,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/test2_HOLE.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="140" column="21" lean-forward="true" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        <state relative-caret-position="244">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5210#5211#0" expanded="true" />
-            <element signature="e#5251#5252#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java">
+    <entry file="file://$PROJECT_DIR$/images/digital_image_processing.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test2_HOLE.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test2_MASK.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/digital_image_processing_MASK.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/hole_test_FILLED.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/digital_image_processing_HOLE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cmdutil/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="267">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1554468192680" expanded="true" signature="546:591" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="20" column="79" lean-forward="true" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

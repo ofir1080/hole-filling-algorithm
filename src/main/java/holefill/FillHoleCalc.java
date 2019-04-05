@@ -6,10 +6,10 @@ import java.util.Set;
 
 public class FillHoleCalc {
 
-    public static void fillHole(Point[][] pixels, WeightFunction w) {
+    public static void fillHole(Point[][] pixels, WeightFunction w, int cType) {
 
         Set<Point> H = ImageProcess.findHole(pixels);
-        Set<Point> B = ImageProcess.findBoundary(pixels, H, CONNECTIVITY_TYPE.EIGHT);
+        Set<Point> B = ImageProcess.findBoundary(pixels, H, cType);
         for (Point h : H) {
             h.setValue(calcColor(h, B, w));
         }
