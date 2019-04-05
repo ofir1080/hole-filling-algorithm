@@ -48,14 +48,14 @@ public class FillHoleCalcTest {
 //        }
 
 
-        testImage = new Point[20][20];
-        for (int i = 0; i < testImage.length; i++) {
-            System.out.print("{");
-            for (int j = 0; j < testImage[0].length; j++) {
-                System.out.print((float) ((int) (Math.random() * 100)) / 100 + "f,");
-            }
-            System.out.println("},");
-        }
+//        testImage = new Point[20][20];
+//        for (int i = 0; i < testImage.length; i++) {
+//            System.out.print("{");
+//            for (int j = 0; j < testImage[0].length; j++) {
+//                System.out.print((float) ((int) (Math.random() * 100)) / 100 + "f,");
+//            }
+//            System.out.println("},");
+//        }
 
     }
 

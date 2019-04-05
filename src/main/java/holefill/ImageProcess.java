@@ -29,31 +29,37 @@ public class ImageProcess {
      * @return 2d array of pixels in the required format
      * @throws IOException
      */
-    public static Point[][] preprocess(String imagePath, String maskPath) throws IOException {
+    public static Point[][] preprocess(String imagePath, String maskPath) {
 
-        BufferedImage image = ImageIO.read(new File(imagePath));
-        BufferedImage maskBuffer = ImageIO.read(new File(maskPath));
-        int width = maskBuffer.getWidth();
-        int height = maskBuffer.getHeight();
-        Point[][] pixels = new Point[height][width];
+        Point[][] pixels = null;
+        try {
+            BufferedImage image = ImageIO.read(new File(imagePath));
+            BufferedImage maskBuffer = ImageIO.read(new File(maskPath));
+            int width = maskBuffer.getWidth();
+            int height = maskBuffer.getHeight();
+            pixels = new Point[height][width];
 
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
+            for (int i = 0; i < height; i++) {
+                for (int j = 0; j < width; j++) {
 
-                float value = -1f;
-                Color c = new Color(maskBuffer.getRGB(j, i));
+                    float value = -1f;
+                    Color c = new Color(maskBuffer.getRGB(j, i));
 //                System.out.print(maskBuffer.getRGB(j, i));
-                if (rgbToGrayscale(c) > .5) {
-                    // if pixel (j,i) is not a 'hole pixel' convert its color to grayscale
-                    Color pixelColor = new Color(image.getRGB(j, i));
-                    value = rgbToGrayscale(pixelColor);
-                }
-                pixels[i][j] = new Point(i, j, value);
+                    if (rgbToGrayscale(c) > .5) {
+                        // if pixel (j,i) is not a 'hole pixel' convert its color to grayscale
+                        Color pixelColor = new Color(image.getRGB(j, i));
+                        value = rgbToGrayscale(pixelColor);
+                    }
+                    pixels[i][j] = new Point(i, j, value);
 //                System.out.print(value);
-            }
+                }
 //            System.out.println();
+            }
+        } catch (IOException e) {
+            System.out.println("Image or mask do not exist");
         }
         return pixels;
+
     }
 
 //    /**
@@ -174,7 +180,7 @@ public class ImageProcess {
                 filledImage.setRGB(j, i, c.getRGB());
             }
         }
-        File output = new File( "/Users/ofir1080/dev/HoleFillingUtility/images/hole_test_FILLED.jpg" );//path + "_FILLED." + format);
+        File output = new File( path + "_FILLED." + format);
         ImageIO.write(filledImage, format, output);
         System.out.println("Saved image in current directory.");
     }
