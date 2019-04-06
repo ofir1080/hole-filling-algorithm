@@ -55,7 +55,7 @@ public class ImageProcessTest {
             correctBoundary.add(testImage[i - 1][i]);
         }
         // test 4-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR),correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 4),correctBoundary);
 
         correctBoundary.add(testImage[9][9]);
         correctBoundary.add(testImage[91][91]);
@@ -64,7 +64,7 @@ public class ImageProcessTest {
             correctBoundary.add(testImage[i - 1][i + 1]);
         }
         // test 8-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.EIGHT),correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 8),correctBoundary);
 
     }
 
@@ -81,14 +81,14 @@ public class ImageProcessTest {
         correctBoundary.add(testImage[34][54]);
         correctBoundary.add(testImage[34][56]);
         // test 4-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 4), correctBoundary);
 
         correctBoundary.add(testImage[33][54]);
         correctBoundary.add(testImage[35][56]);
         correctBoundary.add(testImage[35][54]);
         correctBoundary.add(testImage[33][56]);
         // test 8-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.EIGHT), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 8), correctBoundary);
 
     }
 
@@ -111,14 +111,14 @@ public class ImageProcessTest {
         correctBoundary.add(testImage[39][5]);
 
         // test 4-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 4), correctBoundary);
 
         correctBoundary.add(testImage[38][5]);
         correctBoundary.add(testImage[40][5]);
         correctBoundary.add(testImage[38][69]);
         correctBoundary.add(testImage[40][69]);
         // test 8-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.EIGHT), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 8), correctBoundary);
 
     }
 
@@ -154,7 +154,7 @@ public class ImageProcessTest {
 
         correctBoundary.add(testImage[49][50]);
         // test 4-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 4), correctBoundary);
 
     }
 
@@ -184,7 +184,7 @@ public class ImageProcessTest {
         }
 
         // test 4-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.FOUR), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 4), correctBoundary);
 
 //        correctBoundary.add(testImage[39][39]);
 //        correctBoundary.add(testImage[39][41]);
@@ -198,7 +198,7 @@ public class ImageProcessTest {
         correctBoundary.add(testImage[51][40 + 11]);
 
         // test 8-connectivity
-        assertEquals(ImageProcess.findBoundary(testImage, testHole, CONNECTIVITY_TYPE.EIGHT), correctBoundary);
+        assertEquals(ImageProcess.findBoundary(testImage, testHole, 8), correctBoundary);
 
     }
 

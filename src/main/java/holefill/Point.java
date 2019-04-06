@@ -1,6 +1,8 @@
 package holefill;
 
-
+/**
+ * a point object which hold a value (a color in range 0.0-1.0)
+ */
 public class Point {
 
     private int x;
