@@ -1,9 +1,0 @@
-0000000000000000000000000000000000000000 60624b482108c0a60ce9036db2ff50b3365e10f4 Ofir <ofir1080@gmail.com> 1553893740 +0300	commit (initial): Initailly created classes: Image, Hole, Point
-60624b482108c0a60ce9036db2ff50b3365e10f4 76fd2303a91f60627b27043b09ac575842dac17a Ofir <ofir1080@gmail.com> 1553896386 +0300	commit: Implemented FillHoleMath for dry params.
-76fd2303a91f60627b27043b09ac575842dac17a 9807d70452a0dde552ba8f2a22f4b942ac3e23e7 Ofir <ofir1080@gmail.com> 1553896777 +0300	commit: Added some TODOs.
-9807d70452a0dde552ba8f2a22f4b942ac3e23e7 2f490a7442256e1299a6653f607865664a30c32b Ofir <ofir1080@gmail.com> 1553949663 +0300	commit: Converted RGB to float.
-2f490a7442256e1299a6653f607865664a30c32b b73e13d483fc25ac8d5d28b505a23bd16e2ed376 Ofir <ofir1080@gmail.com> 1553951338 +0300	commit: Added boolean[][] attribute to Image (test).
-b73e13d483fc25ac8d5d28b505a23bd16e2ed376 a7ee004f77f77e1710484058a4bdd9a9b183f066 Ofir <ofir1080@gmail.com> 1553980628 +0300	commit: Changed Image fields and set scanner to take args.
-a7ee004f77f77e1710484058a4bdd9a9b183f066 e94439acee008453459f6d94e2b60bdd6dde0081 Ofir <ofir1080@gmail.com> 1553980976 +0300	commit: Moved 2 functions from Image to FillHoleMath
-e94439acee008453459f6d94e2b60bdd6dde0081 33722ffc44a1a3a0269671f99771a9649a066176 Ofir <ofir1080@gmail.com> 1553982246 +0300	commit: Created functional interface WeightFunction.
-33722ffc44a1a3a0269671f99771a9649a066176 f0e4a80b984b7d56eafdbff36e8a40ecc4926fc4 Ofir <ofir1080@gmail.com> 1554198843 +0300	commit (amend): Created functional interface WeightFunction.
