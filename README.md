@@ -1,4 +1,4 @@
-*ANSWERS to questions in answers.pdf*
+*Answers to questions in answers.pdf*
 
 # Hole Filling Algorithm
 
