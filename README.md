@@ -1,3 +1,5 @@
+*ANSWERS to questions in answers.pdf*
+
 # Hole Filling Algorithm
 
 This library fills holes in images. Steps:
