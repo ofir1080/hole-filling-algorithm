@@ -34,7 +34,7 @@ output
 ## Unit tests
 
 Finding the boundary of the hole was a quite a challenge for me compare to other actions. I tried to implement is as simple, efficient and readable as possible.
-I have build quite a few unit tests for this function using jUnit. To run all tests:
+I have built quite a few unit tests for this function using jUnit. To run all tests:
 
 ```
 ./gradlew test --tests holefill.ImageProcessTest
