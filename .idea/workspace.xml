@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70dd71f-ce63-445b-a76f-ab4526209d5a" name="Default Changelist" comment="Added test images in images/tests.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/holefill/Image.java" afterDir="false" />
+    <list default="true" id="a70dd71f-ce63-445b-a76f-ab4526209d5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/HoleFillingUtility-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/HoleFillingUtility-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cmdutil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmdutil/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/ImageProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/holefill/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/holefill/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unused/Hole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unused/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/holefill/FillHoleCalcTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/holefill/ImageProcessTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -95,7 +84,7 @@
           <entry key="description" value="1" />
           <entry key="exclude" value="1" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="46" />
+          <entry key="java" value="48" />
           <entry key="jpg" value="118" />
           <entry key="master" value="1" />
           <entry key="png" value="19" />
@@ -105,7 +94,7 @@
         <counts>
           <entry key="Groovy" value="5" />
           <entry key="Image" value="137" />
-          <entry key="JAVA" value="46" />
+          <entry key="JAVA" value="48" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -114,25 +103,37 @@
           <entry key="dummy" value="45" />
           <entry key="gradle" value="79" />
           <entry key="java" value="11950" />
-          <entry key="txt" value="448" />
+          <entry key="txt" value="494" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="79" />
           <entry key="JAVA" value="11950" />
-          <entry key="PLAIN_TEXT" value="493" />
+          <entry key="PLAIN_TEXT" value="539" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cmdutil/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -766,13 +767,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554559216259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554560698116" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
@@ -802,11 +803,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImageProcessTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cmdutil.Main" />
       <module name="HoleFillingUtility_main" />
-      <option name="PROGRAM_PARAMETERS" value="f f $PROJECT_DIR$/images/tests/test5.jpg $PROJECT_DIR$/images/tests/test5_mask.jpg 12 0.00001 4" />
+      <option name="PROGRAM_PARAMETERS" value="./images/tests/test6.jpg ./images/tests/test6_mask.jpg 3 0.00001 8" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cmdutil.*" />
@@ -881,16 +882,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.HoleFillingUtility [build]" />
       <item itemvalue="JUnit.ImageProcessTest" />
       <item itemvalue="JUnit.ImageProcessTest.findBoundaryLineTest" />
       <item itemvalue="JUnit.FillHoleCalcTest" />
-      <item itemvalue="Gradle.HoleFillingUtility [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ImageProcessTest" />
         <item itemvalue="Gradle.HoleFillingUtility [build]" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.FillHoleCalcTest" />
         <item itemvalue="JUnit.ImageProcessTest.findBoundaryLineTest" />
       </list>
@@ -906,7 +907,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554199693699</updated>
-      <workItem from="1554199694876" duration="114954000" />
+      <workItem from="1554199694876" duration="116166000" />
     </task>
     <task id="LOCAL-00001" summary="Created findBoundary()">
       <created>1554205095458</created>
@@ -971,19 +972,17 @@
       <option name="project" value="LOCAL" />
       <updated>1554491281119</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Cleaned unnecessary comments and arranged code.">
+      <created>1554559316494</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554559316494</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 51m 46s.xml">
-      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 52m 05s.xml">
-      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FillHoleCalcTest - 2019.04.05 at 14h 52m 22s.xml">
-      <configuration name="FillHoleCalcTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FillHoleCalcTest - 2019.04.05 at 15h 13m 53s.xml">
       <configuration name="FillHoleCalcTest" configurationId="JUnit" />
     </history-entry>
@@ -1005,9 +1004,18 @@
     <history-entry file="ImageProcessTest - 2019.04.06 at 13h 35m 35s.xml">
       <configuration name="ImageProcessTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ImageProcessTest - 2019.04.06 at 17h 00m 18s.xml">
+      <configuration name="ImageProcessTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageProcessTest - 2019.04.06 at 17h 03m 40s.xml">
+      <configuration name="ImageProcessTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageProcessTest - 2019.04.06 at 17h 04m 06s.xml">
+      <configuration name="ImageProcessTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114954000" />
+    <option name="totallyTimeSpent" value="116166000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1030,16 +1038,16 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15323566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.32949308" />
-      <window_info anchor="bottom" id="Build" weight="0.14976959" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.14516129" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50061053" side_tool="true" weight="0.33410138" />
+      <window_info anchor="bottom" id="Build" weight="0.33640552" />
+      <window_info anchor="bottom" id="Terminal" weight="0.14516129" />
+      <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.50061053" side_tool="true" visible="true" weight="0.14976959" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.32949308" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.13248847" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.41474655" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.14976959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.15552996" />
@@ -1102,7 +1110,8 @@
     <MESSAGE value="Created 4 more unit tests for findBoundary function. All Passed" />
     <MESSAGE value="Removed enum for connectivity-type" />
     <MESSAGE value="Added test images in images/tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test images in images/tests." />
+    <MESSAGE value="Cleaned unnecessary comments and arranged code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned unnecessary comments and arranged code." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test2.jpg">
@@ -1116,13 +1125,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Output.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/test.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -1252,16 +1254,6 @@
     <entry file="file://$PROJECT_DIR$/images/tests/test5_FILLED.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cmdutil/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/holefill/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -1326,8 +1318,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/holefill/FillHoleCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="345">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="382" column="19" lean-forward="true" selection-start-line="382" selection-start-column="19" selection-end-line="382" selection-end-column="19" />
+          <folding>
+            <element signature="e#10351#10352#0" expanded="true" />
+            <element signature="e#10385#10386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cmdutil/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1397,11 +1410,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>HoleFillingUtility</last-edited>
+          <last-edited>HoleFillingUtility_main|HoleFillingUtility</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1421,7 +1435,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: commons-cli:commons-cli:1.5-SNAPSHOT</last-edited>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
